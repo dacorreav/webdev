@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../Express/my-express-server"
+		},
+		{
+			"path": "../PokeDex"
+		},
+		{
+			"path": "../Newsletter-Signup"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Newsletter-Signup"
+	}
+}
