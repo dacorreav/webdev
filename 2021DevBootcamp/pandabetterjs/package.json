@@ -1,0 +1,21 @@
+{
+    "name": "pandabetterjs",
+    "displayName": "PandaBetterJS",
+    "description": "none",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.59.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Panda-BetterJs",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Panda-BetterJs-color-theme.json"
+            }
+        ]
+    }
+}
