@@ -1,11 +1,9 @@
 import React from "react";
-import { Link, useRouteMatch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const countries = (props) => {
   const { flag, name, capital, demonym, region, population, numericCode } =
     props;
-  const { path, url } = useRouteMatch();
-  console.log(url);
   return (
     <div key={numericCode} className="card-pais">
       <img src={flag} alt={name} style={{ width: "200px", height: "150px" }} />
