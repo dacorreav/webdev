@@ -1,29 +1,19 @@
-import React from 'react';
-import Countries from './components/Countries';
-import urlApi from './assets/useFetchDataCountries';
-
-
-
-
-
+import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
+import Home from "./views/Home";
+import Resultados from "./views/Resultados";
+import Pais from "./views/Pais";
 
 function App() {
-  const {data} = urlApi('https://restcountries.eu/rest/v2/all');
-  console.log(data);
-
   return (
-    <div className="App">
-      {data.slice(0, 20).map(country => 
-        <Countries 
-        flag={country.flag}
-        name={country.name}
-        capital={country.capital}
-        demonym={country.demonym}
-        region={country.region}
-        population={country.population}
-        />
-        )}     
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        {" "}
+        <Route exact path="/" component={Home} />{" "}
+        <Route exact path="/resultados" component={Resultados} />{" "}
+        <Route exact path="/pais" component={Pais} />{" "}
+      </div>{" "}
+    </BrowserRouter>
   );
 }
 
