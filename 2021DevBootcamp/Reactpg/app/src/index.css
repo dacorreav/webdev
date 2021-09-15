@@ -16,3 +16,9 @@ code {
     margin: 3em auto;
     text-align: center;
 }
+
+.list {
+    margin: 3em auto;
+    text-align: left;
+    font-size: xxx-large;
+}

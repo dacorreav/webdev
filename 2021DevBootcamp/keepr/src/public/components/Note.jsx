@@ -1,11 +1,10 @@
-import react from "react";
-import { ReactDOM } from "react";
+import React from "react";
 
-const Note =()=>{
+const Note =(props)=>{
 return (
-<div className="note">
-<h1 > This is the title </h1>
-        <p>This is the paragraph </p>
+<div className="note" >
+<h1 > {props.title} </h1>
+        <p>{props.content} </p>
     </div>
 )
 }
