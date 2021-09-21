@@ -7,12 +7,13 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        {" "}
-        <Route exact path="/" component={Home} />{" "}
-        <Route exact path="/pais/:id" component={Pais} />{" "}
-      </div>{" "}
+        <Route exact path="/" component={Home} />
+        <Route exact path="/pais/:id" component={Pais} />
+      </div>
     </BrowserRouter>
   );
 }
 
 export default App;
+
+/* vim: set ft=typescriptreact: */
