@@ -4,13 +4,16 @@
 import * as React from 'react'
 
 function Greeting({initialName = ''}) {
-  const [name, setName] = React.useState(
-    window.localStorage.getItem('name') ?? initialName,
-  )
+  const [name, setName] = React.useState(() => {
+    return window.localStorage.getItem('name') ?? initialName
+  })
 
   React.useEffect(() => {
+    console.log(` State ${name}`)
+    console.log(window.localStorage.getItem('name'))
+
     window.localStorage.setItem('name', name)
-  })
+  }, [name])
 
   function handleChange(event) {
     setName(event.target.value)
